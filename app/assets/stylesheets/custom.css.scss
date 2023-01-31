@@ -2,6 +2,9 @@ $navbar-default-bg: #073B15;;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navLink{
+    color: #fff;
+}
 .center{
     text-align: center;
 }
@@ -37,3 +40,4 @@ $navbar-default-bg: #073B15;;
     color: #fff;
     text-decoration: none;
 }
+
