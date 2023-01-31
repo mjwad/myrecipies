@@ -29,7 +29,7 @@ gem "jbuilder"
 
 #bootstrap
 gem 'bootstrap-sass', '~> 3.4.1'
-
+gem 'autoprefixer-rails'
 gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -74,3 +74,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "cssbundling-rails", "~> 1.1"
