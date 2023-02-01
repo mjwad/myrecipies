@@ -1,0 +1,26 @@
+<% if @recipe.errors.any?%>
+	<h3>
+		Following are the error that are occuring due to Incorrect Params
+	</h3>
+
+	<ul>
+		<% @recipe.errors.full_messages.each do |msg|%>
+			<li><%=msg%></li>
+		<%end%>
+  </ul>
+<%end%>
+<%= form_for @recipe do |f| %>
+    <p>
+        <%= f.label :name, "Name" %><br>
+        <%= f.text_field :name %>
+    </p>
+
+    <p>
+        <%= f.label :description, "Description" %> <br>
+        <%= f.text_area  :description %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<%end%>
