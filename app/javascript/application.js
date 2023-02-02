@@ -3,3 +3,5 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "bootstrap-sprockets";
 import "bootstrap";
+import "jquery"
+import "jquery_ujs"
