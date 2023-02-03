@@ -1,0 +1,27 @@
+<%= render "shared/page_title",title: "Login" %>
+  <%= form_for(:session,:html=>{class: "form-horizontal",role:"form"},url: login_path)  do |f| %>
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :email,"Email" %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.text_field :email,class: "form-control",placeholder: "Enter your email",autofocus:true %>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :password %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.text_field :password,type: "password",class: "form-control",placeholder: "Enter a password",autofocus:true %>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <%= f.submit "Login", class: "btn btn-primary btn-lg btn-xlarge" %>
+                </div>
+            </div>
+        <% end %>
+        <div class="center colormatch">
+           Have no Account?  [ <%= link_to "Sign Up",signup_path %> ]
+        </div>
