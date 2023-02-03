@@ -20,6 +20,7 @@
     </div>
     <div class="recipe-actions">
         <%= link_to "Edit this recipe",edit_recipe_path(@recipe),class: "btn btn-xs btn-warning" %>
-        <%= button_to "Delete this recipe",recipe_path(@recipe),class: "btn btn-xs btn-warning",method: :delete,data: {urbo_confirm: "Are you sure?"}%>
+        <%= button_to "Delete this recipe",recipe_path(@recipe),class: "btn btn-xs btn-danger",method: :delete,data: {urbo_confirm: "Are you sure?"}%>
+        <%= link_to "Return this recipe Listing",recipes_path,class: "btn btn-xs btn-primary" %>
     </div>
 </div>
