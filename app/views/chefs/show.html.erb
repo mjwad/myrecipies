@@ -5,5 +5,8 @@
     </div>
 </div>
 <h4 align="center"><%= @chef.name%>'s recipes</h4>
+<div align="center">
+    <%= will_paginate @chef_recipe%>
 <%= render 'recipes/recipe',obj:@chef.recipes %>
-
+    <%= will_paginate @chef_recipe%>
+</div>

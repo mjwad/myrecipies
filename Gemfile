@@ -10,7 +10,8 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-
+gem 'will_paginate','3.3.0'
+gem 'bootstrap-will_paginate','1.0.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
