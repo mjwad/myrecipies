@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
   def require_user
     if !logged_in?
-      falsh[:danger]="No user is currently logged in"
+      flash[:danger]="No user is currently logged in"
       redirect_to root_path
     end
   end
